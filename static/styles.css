@@ -1,0 +1,16 @@
+body {
+    font-family: verdana, sans-serif;
+}
+
+form {
+    border: solid 2px #000000;
+    padding: 10px;
+}
+
+input, textarea {
+    background-color: yellow;
+}
+
+#lastname {
+    font-weight: bold;
+}

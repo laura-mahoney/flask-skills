@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+    <title>Application Form</title>
+    <link rel = "stylesheet" href = "static/styles.css">
+</head>
+<body>
+<h1>WORK WITH US</h1>
+<h3>We are currently expanding and always looking for new talent! We would love to hear more about you. First, get your application started by filling out some information below!</h3>
+<div class="appform">
+<form action = "/application-success" method = "POST">
+    <label>First Name: <input type = "text" name = "firstname"></label></br>
+    <label>Last Name: <input type = "text" id = "lastname" name = "lastname"></label></br>
+    <label>Salary Requirement: <input type = "integer" name = "salary"></label></br>
+    <select name = "position">  
+            {% for position in positions %}
+                <option value = "{{ position }}">{{ position }}</option>
+            {% end for %}
+    <input type="submit">
+</form>
+</div>
+
+</body>
+</html>
